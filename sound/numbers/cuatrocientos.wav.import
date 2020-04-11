@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cuatrocientos.wav-38956792f5c3f9f91f2118e33bf1c66c.sample"
+
+[deps]
+
+source_file="res://sound/numbers/cuatrocientos.wav"
+dest_files=[ "res://.import/cuatrocientos.wav-38956792f5c3f9f91f2118e33bf1c66c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

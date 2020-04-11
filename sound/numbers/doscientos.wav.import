@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/doscientos.wav-f0eae25d0d4c8cdb77b96ac2ea6ba0ba.sample"
+
+[deps]
+
+source_file="res://sound/numbers/doscientos.wav"
+dest_files=[ "res://.import/doscientos.wav-f0eae25d0d4c8cdb77b96ac2ea6ba0ba.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://main_menu/MainMenu.gd" type="Script" id=1]
+
+[node name="MainMenu" type="Control"]
+margin_right = 1024.0
+margin_bottom = 608.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OpenWhichNumber" type="Button" parent="."]
+margin_left = 132.657
+margin_top = 83.0
+margin_right = 304.657
+margin_bottom = 170.0
+text = "que número es"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OpenSayTheNumber" type="Button" parent="."]
+margin_left = 133.0
+margin_top = 219.0
+margin_right = 305.0
+margin_bottom = 304.0
+text = "pon el número"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OpenSettings" type="Button" parent="."]
+margin_left = 133.0
+margin_top = 367.0
+margin_right = 305.0
+margin_bottom = 456.0
+text = "ajustes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="OpenWhichNumber" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="OpenSayTheNumber" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="OpenSettings" to="." method="_on_Button3_pressed"]

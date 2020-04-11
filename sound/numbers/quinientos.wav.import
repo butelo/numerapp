@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/quinientos.wav-e1112f2debb23e991a1c1a3f892f0e1b.sample"
+
+[deps]
+
+source_file="res://sound/numbers/quinientos.wav"
+dest_files=[ "res://.import/quinientos.wav-e1112f2debb23e991a1c1a3f892f0e1b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

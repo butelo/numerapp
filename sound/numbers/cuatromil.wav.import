@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cuatromil.wav-2a6957d6b3ffc75b3516de48b53e8d4d.sample"
+
+[deps]
+
+source_file="res://sound/numbers/cuatromil.wav"
+dest_files=[ "res://.import/cuatromil.wav-2a6957d6b3ffc75b3516de48b53e8d4d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
