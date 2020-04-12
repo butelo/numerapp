@@ -1,9 +1,8 @@
 extends Control
 
 onready var player = AudioStreamPlayer.new()
-onready var currentLabelIndex = 0
-onready var labels = [$FirstNumberGroup/firstNumberLabel, $SecondNumberGroup/secondNumberLabel, $ThirdNumberGroup/thirdhNumberLabel, $FourthNumberGroup/fourthNumberLabel]
-
+onready var currentLabelIndex = 3
+onready var labels = [$HBoxContainer/firstNumberLabel, $HBoxContainer/secondNumberLabel, $HBoxContainer/thirdhNumberLabel, $HBoxContainer/fourthNumberLabel]
 const CorrectSound = preload("res://sound/numbers/CorrectSound.gd")
 	
 	
@@ -26,15 +25,36 @@ func _on_DeleteButton_pressed():
 func writeNumber(sound, text):
 	player.stream = load(sound)
 	player.play()
-	if(currentLabelIndex < labels.size()):
+	
+	var number =  labels.size() - currentLabelIndex
+	print(number)
+	
+	if(currentLabelIndex == labels.size()-1):
 		labels[currentLabelIndex].text= text
-		currentLabelIndex = currentLabelIndex +1
+		currentLabelIndex = currentLabelIndex -1
+	elif(currentLabelIndex<labels.size()-1 && currentLabelIndex>=0):
+		
+		
+		
+		labels[currentLabelIndex].text= labels[currentLabelIndex ].text
+		labels[currentLabelIndex+1].text = text
+		currentLabelIndex = currentLabelIndex -1
+	
+	
+	
+#	if(currentLabelIndex < labels.size()):
+#		labels[currentLabelIndex].text= text
+#		currentLabelIndex = currentLabelIndex -1
+		
+		
+		
+		
 
 
 func _on_DeleteAllButton_pressed():
 	for label in labels:
 		label.text = ""
-	currentLabelIndex = 0
+	currentLabelIndex = 3
 
 
 func _on_PlayButton_pressed():

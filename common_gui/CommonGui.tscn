@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://common_gui/CommonGui.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Arial.ttf" type="DynamicFontData" id=2]
@@ -6,24 +6,20 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
+use_filter = true
 font_data = ExtResource( 2 )
 
-[sub_resource type="Animation" id=2]
-resource_name = "flickering"
-length = 0.6
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
-"values": [ true, false, true ]
-}
+[sub_resource type="DynamicFont" id=2]
+size = 90
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 90
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 90
+font_data = ExtResource( 2 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -32,7 +28,6 @@ margin_top = 1.53674
 margin_bottom = 1.53674
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 204.051 ],
 "_edit_use_anchors_": false
 }
 
@@ -72,121 +67,6 @@ margin_top = 477.0
 margin_right = 656.65
 margin_bottom = 516.0
 text = "<<<"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="FirstNumberGroup" type="Control" parent="."]
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="FirstNumberLine" type="Line2D" parent="FirstNumberGroup"]
-position = Vector2( -12.8251, -1.53671 )
-scale = Vector2( 0.982493, 1 )
-points = PoolVector2Array( 99.39, 304.706, 199.277, 304.706 )
-
-[node name="Polygon2D" type="Polygon2D" parent="FirstNumberGroup"]
-position = Vector2( -55.8815, 154.441 )
-color = Color( 0.839216, 0.466667, 0.466667, 1 )
-antialiased = true
-invert_enable = true
-invert_border = 4.0
-polygon = PoolVector2Array( 145.294, 46.5369, 145.294, 135.667, 234.684, 135.667, 234.684, 46.5369 )
-
-[node name="firstNumberLabel" type="Label" parent="FirstNumberGroup"]
-margin_left = 107.252
-margin_top = 200.978
-margin_right = 157.252
-margin_bottom = 302.978
-custom_fonts/font = SubResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="FirstNumberGroup"]
-root_node = NodePath("../FirstNumberLine")
-autoplay = "flickering"
-anims/flickering = SubResource( 2 )
-
-[node name="FourthNumberGroup" type="Control" parent="."]
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="FourthNumberLine" type="Line2D" parent="FourthNumberGroup"]
-position = Vector2( 398.853, 0 )
-points = PoolVector2Array( 99.39, 304.706, 199.277, 304.706 )
-
-[node name="Polygon2D4" type="Polygon2D" parent="FourthNumberGroup"]
-position = Vector2( 355.317, 154.441 )
-color = Color( 0.839216, 0.466667, 0.466667, 1 )
-antialiased = true
-invert_enable = true
-invert_border = 3.0
-polygon = PoolVector2Array( 145.294, 46.5369, 145.294, 135.667, 234.684, 135.667, 234.684, 46.5369 )
-
-[node name="fourthNumberLabel" type="Label" parent="FourthNumberGroup"]
-margin_left = 524.618
-margin_top = 202.514
-margin_right = 574.618
-margin_bottom = 304.514
-custom_fonts/font = SubResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ThirdNumberGroup" type="Control" parent="."]
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ThirdNumberLine" type="Line2D" parent="ThirdNumberGroup"]
-position = Vector2( 274.305, 0 )
-points = PoolVector2Array( 99.39, 304.706, 199.277, 304.706 )
-
-[node name="Polygon2D3" type="Polygon2D" parent="ThirdNumberGroup"]
-position = Vector2( 234.684, 154.441 )
-color = Color( 0.839216, 0.466667, 0.466667, 1 )
-antialiased = true
-invert_enable = true
-invert_border = 3.0
-polygon = PoolVector2Array( 145.294, 46.5369, 145.294, 135.667, 234.684, 135.667, 234.684, 46.5369 )
-
-[node name="thirdhNumberLabel" type="Label" parent="ThirdNumberGroup"]
-margin_left = 407.305
-margin_top = 202.514
-margin_right = 457.305
-margin_bottom = 304.514
-custom_fonts/font = SubResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="SecondNumberGroup" type="Control" parent="."]
-rect_pivot_offset = Vector2( 0.014, 0 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="SecondNumerLine" type="Line2D" parent="SecondNumberGroup"]
-position = Vector2( 133, 0 )
-points = PoolVector2Array( 99.39, 304.706, 199.277, 304.706 )
-
-[node name="Polygon2D2" type="Polygon2D" parent="SecondNumberGroup"]
-position = Vector2( 89.39, 155.209 )
-color = Color( 0.839216, 0.466667, 0.466667, 1 )
-antialiased = true
-invert_enable = true
-invert_border = 3.0
-polygon = PoolVector2Array( 145.294, 46.5369, 145.294, 135.667, 234.684, 135.667, 234.684, 46.5369 )
-
-[node name="secondNumberLabel" type="Label" parent="SecondNumberGroup"]
-margin_left = 255.431
-margin_top = 202.514
-margin_right = 305.431
-margin_bottom = 304.514
-custom_fonts/font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -298,6 +178,44 @@ text = "9"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 426.91
+margin_top = 258.17
+margin_right = 470.91
+margin_bottom = 272.17
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="firstNumberLabel" type="Label" parent="HBoxContainer"]
+margin_left = 50.0
+margin_right = 75.0
+margin_bottom = 102.0
+custom_fonts/font = SubResource( 1 )
+text = " "
+
+[node name="secondNumberLabel" type="Label" parent="HBoxContainer"]
+margin_left = 79.0
+margin_right = 104.0
+margin_bottom = 102.0
+custom_fonts/font = SubResource( 2 )
+text = " "
+
+[node name="thirdhNumberLabel" type="Label" parent="HBoxContainer"]
+margin_left = 108.0
+margin_right = 133.0
+margin_bottom = 102.0
+custom_fonts/font = SubResource( 3 )
+text = " "
+
+[node name="fourthNumberLabel" type="Label" parent="HBoxContainer"]
+margin_left = 137.0
+margin_right = 162.0
+margin_bottom = 102.0
+custom_fonts/font = SubResource( 4 )
+text = " "
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
 [connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="DeleteAllButton" to="." method="_on_DeleteAllButton_pressed"]
