@@ -17,38 +17,37 @@ func _on_NumberButtons_number_button_pressed_signal(number, sound):
 	writeNumber(sound, number)
 
 
+
+
 func _on_DeleteButton_pressed():
-	if(currentLabelIndex > 0):
-		currentLabelIndex = currentLabelIndex -1
-	labels[currentLabelIndex].text= ""
+	var labelsLastIndex = labels.size()-1
+	var indicator = labelsLastIndex-currentLabelIndex
+	
+	if(indicator == 0):
+		return
+	
+#	backwards loop
+	for n in range(indicator, 1, -1):
+		labels[currentLabelIndex+n].text =labels[currentLabelIndex+n-1].text
+
+	labels[currentLabelIndex+1].text =""
+	currentLabelIndex = currentLabelIndex +1
+	
 
 func writeNumber(sound, text):
 	player.stream = load(sound)
 	player.play()
+	if(currentLabelIndex == -1):
+		return
 	
-	var number =  labels.size() - currentLabelIndex
-	print(number)
-	
-	if(currentLabelIndex == labels.size()-1):
-		labels[currentLabelIndex].text= text
-		currentLabelIndex = currentLabelIndex -1
-	elif(currentLabelIndex<labels.size()-1 && currentLabelIndex>=0):
+	var labelsLastIndex = labels.size()-1
+	var indicator = labelsLastIndex-currentLabelIndex
+
+	for n in (indicator):
+		labels[currentLabelIndex + n].text= labels[currentLabelIndex + n +1].text
 		
-		
-		
-		labels[currentLabelIndex].text= labels[currentLabelIndex ].text
-		labels[currentLabelIndex+1].text = text
-		currentLabelIndex = currentLabelIndex -1
-	
-	
-	
-#	if(currentLabelIndex < labels.size()):
-#		labels[currentLabelIndex].text= text
-#		currentLabelIndex = currentLabelIndex -1
-		
-		
-		
-		
+	labels[labelsLastIndex].text= text
+	currentLabelIndex = currentLabelIndex -1
 
 
 func _on_DeleteAllButton_pressed():
