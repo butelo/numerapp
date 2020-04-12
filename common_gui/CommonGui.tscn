@@ -36,7 +36,7 @@ margin_left = 936.0
 margin_top = 29.0
 margin_right = 992.0
 margin_bottom = 64.0
-text = "close"
+text = "X"
 __meta__ = {
 "_edit_use_anchors_": false
 }
