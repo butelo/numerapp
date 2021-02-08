@@ -1,0 +1,57 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: previo pantalla 2.ai
+Color Mode: RGB color
+Color Profile: Display
+Ruler Units: pixels
+Artboard Dimensions: 2734 px x 2049 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Source Sans Variable ExtraLight (OTF)
+Source Sans Variable Light (OTF)
+Source Sans Variable Regular (OTF)
+Source Sans Variable Semibold (OTF)
+Futura Medium (TrueType)
+Grand Hotel (TrueType)
+Just Me Again Down Here (TrueType)
+Spartan Black (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Usuarios/iria/Biblioteca/Application Support/Adobe/Creative Cloud Libraries/LIBS/327058DD600F51C20A495C95_AdobeID/creative_cloud/dcx/971e028d-1bd9-42e6-a410-7ae8c396aa6d/components/6ecc1516-dc41-485e-bfb7-360cade5a2e4.ai
+Type: PDF
+
+/Usuarios/iria/Biblioteca/Application Support/Adobe/Creative Cloud Libraries/LIBS/327058DD600F51C20A495C95_AdobeID/creative_cloud/dcx/971e028d-1bd9-42e6-a410-7ae8c396aa6d/components/6ecc1516-dc41-485e-bfb7-360cade5a2e4.ai
+Type: PDF
+
+/Usuarios/iria/Biblioteca/Application Support/Adobe/Creative Cloud Libraries/LIBS/327058DD600F51C20A495C95_AdobeID/creative_cloud/dcx/971e028d-1bd9-42e6-a410-7ae8c396aa6d/components/6ecc1516-dc41-485e-bfb7-360cade5a2e4.ai
+Type: PDF
+
+/Usuarios/iria/Biblioteca/Application Support/Adobe/Creative Cloud Libraries/LIBS/327058DD600F51C20A495C95_AdobeID/creative_cloud/dcx/971e028d-1bd9-42e6-a410-7ae8c396aa6d/components/6ecc1516-dc41-485e-bfb7-360cade5a2e4.ai
+Type: PDF
